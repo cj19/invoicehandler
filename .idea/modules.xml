@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/invoices-handler.iml" filepath="$PROJECT_DIR$/invoices-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/invoices-handler-ear/invoices-handler-ear.iml" filepath="$PROJECT_DIR$/invoices-handler-ear/invoices-handler-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/invoices-handler-ejb/invoices-handler-ejb.iml" filepath="$PROJECT_DIR$/invoices-handler-ejb/invoices-handler-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/invoices-handler-web/invoices-handler-web.iml" filepath="$PROJECT_DIR$/invoices-handler-web/invoices-handler-web.iml" />
+    </modules>
+  </component>
+</project>

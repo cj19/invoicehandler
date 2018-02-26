@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="invoices-handler-ejb:ejb">
+    <output-path>$PROJECT_DIR$/invoices-handler-ejb/target</output-path>
+    <root id="archive" name="invoices-handler-ejb-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="invoices-handler-ejb:ejb exploded" />
+    </root>
+  </artifact>
+</component>
