@@ -50,6 +50,10 @@ public class AddNewInvoiceAndItemController implements Serializable {
 
     @PostConstruct
     public void init() {
+        initVariables();
+    }
+
+    private void initVariables() {
         items=new ArrayList<>();
         invoice = new Invoice();
         invoice.setItems(new ArrayList<Item>());
@@ -61,10 +65,14 @@ public class AddNewInvoiceAndItemController implements Serializable {
 
     public String createInvoice() {
         setInvoiceInItems();
-        invoice.setItems(items);
-        invoiceService.createInvoice(invoice);
+        persistInvoice();
         Popup.pushPopup(Message.INVOICE_ADD_SUCCESS_BODY, Message.INVOICE_ADD_SUCCESS_HEADER);
         return "/dataviews/add_invoice.xhtml?faces-redirect=true";
+    }
+
+    private void persistInvoice() {
+        invoice.setItems(items);
+        invoiceService.createInvoice(invoice);
     }
 
     private void setInvoiceInItems() {
@@ -73,24 +81,32 @@ public class AddNewInvoiceAndItemController implements Serializable {
         }
     }
 
-    public void updateDataTable() {
-        items = itemService.getAllItems();
-    }
-
     public void updateTotalPrice() {
         totalPrice = unitPrice * quantity;
     }
 
     public void createItem() {
-        newItem.setUnitPrice(unitPrice);
-        newItem.setQuantity(quantity);
-        newItem.setTotalPrice(totalPrice);
+        setNewItemParameters();
+        calculateTotalCostAndSetItem();
+        Popup.pushPopup(Message.ITEM_ADD_SUCCESS_BODY, Message.ITEM_ADD_SUCCESS_HEADER);
+        resetItem();
+    }
+
+    private void resetItem() {
+        newItem = new Item();
+    }
+
+    private void calculateTotalCostAndSetItem() {
         totalCost += newItem.getTotalPrice();
         invoice.setTotalCost(totalCost);
         newItem.setInvoices(new ArrayList<Invoice>());
         items.add(newItem);
-        Popup.pushPopup(Message.ITEM_ADD_SUCCESS_BODY, Message.ITEM_ADD_SUCCESS_HEADER);
-        newItem = new Item();
+    }
+
+    private void setNewItemParameters() {
+        newItem.setUnitPrice(unitPrice);
+        newItem.setQuantity(quantity);
+        newItem.setTotalPrice(totalPrice);
     }
 
     public Invoice getInvoice() {

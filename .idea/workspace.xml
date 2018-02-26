@@ -8,7 +8,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32272146-e57e-484f-b91f-37fab23fd26e" name="Default" comment="" />
+    <list default="true" id="32272146-e57e-484f-b91f-37fab23fd26e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/AddNewInvoiceAndItemController.java" afterPath="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/AddNewInvoiceAndItemController.java" />
+      <change beforePath="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/ViewInvoiceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/invoices-handler-web/target/classes/com/darvasroland/controller/ViewInvoiceController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/invoices-handler-web/target/invoices-handler-web-1.0-SNAPSHOT/WEB-INF/classes/com/darvasroland/controller/ViewInvoiceController.class" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/invoices-handler-ear/target/" />
     <ignored path="$PROJECT_DIR$/invoices-handler-web/target/" />
@@ -34,7 +40,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Invoice.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Invoice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/invoices-handler-ejb/src/main/java/com/darvasroland/entity/Invoice.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -44,36 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewInvoiceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/ViewInvoiceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-              <folding>
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-                <element signature="e#1060#1061#0" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-                <element signature="e#1223#1224#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
-                <element signature="e#1331#1332#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="view_invoice.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/webapp/dataviews/view_invoice.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="37" column="63" lean-forward="false" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
+            <state relative-caret-position="855">
+              <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -148,12 +129,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddNewInvoiceAndItemController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddNewInvoiceAndItemController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/AddNewInvoiceAndItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="663">
+              <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+              <folding>
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1157#1158#0" expanded="true" />
+                <element signature="e#2273#2274#0" expanded="true" />
+                <element signature="e#2309#2310#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,12 +209,12 @@
         <option value="$PROJECT_DIR$/invoices-handler-ejb/src/main/java/com/darvasroland/entity/Invoice.java" />
         <option value="$PROJECT_DIR$/invoices-handler-web/src/main/webapp/dataviews/add_invoice.xhtml" />
         <option value="$PROJECT_DIR$/invoices-handler-web/src/main/webapp/resources/css/layout.css" />
-        <option value="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/AddNewInvoiceAndItemController.java" />
         <option value="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/InvoiceView.java" />
         <option value="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/ViewInvoiceController.java" />
         <option value="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/view/InvoiceView.java" />
         <option value="$PROJECT_DIR$/invoices-handler-web/src/main/webapp/dataviews/view_invoice.xhtml" />
         <option value="$PROJECT_DIR$/invoices-handler-web/src/main/webapp/index.xhtml" />
+        <option value="$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/AddNewInvoiceAndItemController.java" />
       </list>
     </option>
   </component>
@@ -245,7 +231,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -504,6 +490,7 @@
     <property name="project.structure.side.proportion" value="0.08038585" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -714,7 +701,7 @@
       <workItem from="1519501595829" duration="10580000" />
       <workItem from="1519555519980" duration="9656000" />
       <workItem from="1519593139343" duration="2236000" />
-      <workItem from="1519637005094" duration="32867000" />
+      <workItem from="1519637005094" duration="33695000" />
     </task>
     <task id="LOCAL-00001" summary="Add alpha">
       <created>1519675994028</created>
@@ -727,10 +714,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72741000" />
+    <option name="totallyTimeSpent" value="73569000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.50208336" order="5" side_tool="true" content_ui="tabs" />
@@ -751,8 +739,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45652175" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45652175" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18802084" sideWeight="0.5037116" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1924307" sideWeight="0.49628845" order="9" side_tool="false" content_ui="combo" />
@@ -1161,37 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/AddNewInvoiceAndItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/ViewInvoiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/view/InvoiceView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1206,14 +1163,6 @@
             <element signature="e#2947#2948#0" expanded="true" />
             <element signature="e#2982#2983#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/webapp/dataviews/view_invoice.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="37" column="63" lean-forward="false" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,6 +1187,35 @@
         <state relative-caret-position="285">
           <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/ViewInvoiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-305">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/webapp/dataviews/view_invoice.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invoices-handler-web/src/main/java/com/darvasroland/controller/AddNewInvoiceAndItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+          <folding>
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
