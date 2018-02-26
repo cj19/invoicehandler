@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<ui:composition template="/WEB-INF/templates/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="site_title">
+        Add Invoice
+    </ui:define>
+    <ui:define name="main_content">
+        <h:form id="invoice_form">
+            <p:panel id="invoice_panel" header="Add new invoice" style="margin-bottom: 10px;">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <p:outputLabel value="Customer name: *"/>
+                    <p:inputText id="customername" value="#{AddNewInvoiceAndItem.invoice.customerName}"
+                                 required="true" requiredMessage="Customer name is required"
+                                 styleClass="inputTextWidth" placeholder="Choose a customer name!"/>
+
+                    <p:outputLabel value="Issue Date: *"/>
+                    <p:calendar value="#{AddNewInvoiceAndItem.invoice.issueDate}"
+                                yearRange="c-70:c+0" navigator="true" pattern="yyyy-MM-dd HH:mm:ss" required="true"
+                                requiredMessage="Issue date is required!" placeholder="Choose an issue date!"/>
+
+                    <p:outputLabel value="Due Date: *"/>
+                    <p:calendar value="#{AddNewInvoiceAndItem.invoice.dueDate}"
+                                yearRange="c-70:c+0" navigator="true" pattern="yyyy-MM-dd HH:mm:ss" required="true"
+                                requiredMessage="Due date is required!" placeholder="Choose a due date!"/>
+
+                    <p:outputLabel value="Comment: "/>
+                    <p:inputText id="comment" value="#{AddNewInvoiceAndItem.invoice.comment}"
+                                 required="false" styleClass="inputTextWidth" placeholder="Comment is not required"/>
+
+                    <p:outputLabel value="Total Cost: *"/>
+                    <p:inputText id="total" readonly="true" value="#{AddNewInvoiceAndItem.invoice.totalCost}"
+                                 styleClass="inputTextWidth" placeholder="Being calculated...">
+                    </p:inputText>
+                </h:panelGrid>
+            </p:panel>
+            <p:commandButton value="Create Invoice" action="#{AddNewInvoiceAndItem.createInvoice}" styleClass="blue_button"/>
+        </h:form>
+        <h:form id="item_form">
+            <p:dataTable id="item_table" var="items" value="#{AddNewInvoiceAndItem.items}"
+                         rowKey="#{items.id}"
+                         paginator="true" rowsPerPageTemplate="10,20,50" rows="10"
+                         paginatorTemplate="{FirstPageLink} {PreviousPageLink}
+                          {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+                <f:facet name="header">
+                    <div align="left">
+                        <p:outputPanel style="border: none;">
+                            <h:outputText value="Avaible items:  "/>
+                        </p:outputPanel>
+                    </div>
+                </f:facet>
+
+                <p:column headerText="Id" style="width: 50px">
+                    <h:outputText value="#{items.id}"/>
+                </p:column>
+
+                <p:column headerText="Item name">
+                    <h:outputText value="#{items.itemName}"/>
+                </p:column>
+
+                <p:column headerText="Unit price">
+                    <h:outputText value="#{items.unitPrice}"/>
+                </p:column>
+
+                <p:column headerText="Quantity">
+                    <h:outputText value="#{items.quantity}"/>
+                </p:column>
+
+                <p:column headerText="Total price">
+                    <h:outputText value="#{items.totalPrice}"/>
+                </p:column>
+            </p:dataTable>
+            <br/>
+            <p:commandButton value="Create Item" onclick="PF('dlg').show()" styleClass="blue_button"/>
+            <br/>
+        </h:form>
+
+        <p:dialog id="item_dialog" header="Addig Item" widgetVar="dlg">
+            <h:form id="item_dialog_form">
+                <p:panel id="item_panel" header="Add new item" style="margin-bottom: 10px;">
+                    <p:panelGrid columns="2" cellpadding="5">
+
+                        <p:outputLabel value="Item name: *"/>
+                        <p:inputText id="itemname" value="#{AddNewInvoiceAndItem.newItem.itemName}"
+                                     required="true" requiredMessage="Item name is required"
+                                     styleClass="inputTextWidth" placeholder="Choose a item name!"/>
+
+
+                        <p:outputLabel value="Unit price: *"/>
+                        <p:inputText id="unitprice" value="#{AddNewInvoiceAndItem.unitPrice}"
+                                     required="true" requiredMessage="Unit price is required"
+                                     styleClass="inputTextWidth" placeholder="Choose unit price">
+                            <f:ajax event="valueChange" execute="@this" render="totalprice"
+                                    listener="#{AddNewInvoiceAndItem.updateTotalPrice}"/>
+                        </p:inputText>
+
+                        <p:outputLabel value="Quantity: *"/>
+                        <p:inputText id="quantity" value="#{AddNewInvoiceAndItem.quantity}"
+                                     required="true" requiredMessage="Quantity is required"
+                                     styleClass="inputTextWidth" placeholder="Choose quantity">
+                            <f:ajax event="valueChange" execute="@this" render="totalprice"
+                                    listener="#{AddNewInvoiceAndItem.updateTotalPrice}"/>
+                        </p:inputText>
+
+                        <p:outputLabel value="Total Price: *"/>
+                        <p:outputLabel id="totalprice" value="#{AddNewInvoiceAndItem.totalPrice}"/>
+                    </p:panelGrid>
+                </p:panel>
+                <p:commandButton value="Create Invoice" action="#{AddNewInvoiceAndItem.createItem}"
+                                 styleClass="blue_button">
+                </p:commandButton>
+            </h:form>
+            <p:ajax event="close" update="invoice_form:total item_form" process="item_dialog_form"/>
+        </p:dialog>
+    </ui:define>
+</ui:composition>
